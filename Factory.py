@@ -2,6 +2,7 @@ from PythonClass import PythonClass
 from PHPClass import PHPClass
 from JavaClass import JavaClass
 from JavaScriptClass import JavaScriptClass
+from ReactClass import ReactClass
 class Factory:
     __instance__ = None
     def __init__(self):
@@ -15,7 +16,7 @@ class Factory:
             Factory()
         return Factory.__instance__
     def getLanguageList(self):
-        return ['Python', 'PHP', 'Java', 'JavaScript']
+        return ['Python', 'PHP', 'Java', 'JavaScript', 'React']
     def getClassInstance(self, language):
         if (language=='Python'):
             return PythonClass.getInstance()
@@ -25,3 +26,5 @@ class Factory:
             return JavaClass.getInstance()
         elif (language=='JavaScript'):
             return JavaScriptClass.getInstance()
+        elif (language=='React'):
+            return ReactClass.getInstance()
