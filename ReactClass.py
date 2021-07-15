@@ -25,7 +25,6 @@ class ReactClass(BaseClass):
         else:
             constructorString = ''
         return '''import React from 'react';
-import ReactDOM from 'react-dom';
 export default class {className} extends React.Component {{
 {constructorString}
 {t}state = {n}{u}{{
