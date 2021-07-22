@@ -35,7 +35,6 @@ class PythonClass(BaseClass):
 {t}def __init__(self):
 {t}{t}pass
 {t}'''.format(className = className, t=self.seperator(space))
-            self.generateRegularClass(className, options['Space Indent'].get())
     
     def getFileTypeName(self):
         return 'Python File'

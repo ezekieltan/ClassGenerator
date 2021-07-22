@@ -3,6 +3,7 @@ from PHPClass import PHPClass
 from JavaClass import JavaClass
 from JavaScriptClass import JavaScriptClass
 from ReactClass import ReactClass
+from DashClass import DashClass
 class Factory:
     __instance__ = None
     def __init__(self):
@@ -16,7 +17,7 @@ class Factory:
             Factory()
         return Factory.__instance__
     def getLanguageList(self):
-        return ['Python', 'PHP', 'Java', 'JavaScript', 'React']
+        return ['Python', 'PHP', 'Java', 'JavaScript', 'React', 'Dash']
     def getClassInstance(self, language):
         if (language=='Python'):
             return PythonClass.getInstance()
@@ -28,3 +29,5 @@ class Factory:
             return JavaScriptClass.getInstance()
         elif (language=='React'):
             return ReactClass.getInstance()
+        elif (language=='Dash'):
+            return DashClass.getInstance()
