@@ -1,6 +1,6 @@
 # ClassGenerator
 Quickly generate class files.\
-Supports Python, PHP, Java, JavaScript.
+Supports Python, PHP, Java, JavaScript, React
 
 ![screenshot](https://raw.githubusercontent.com/ezekieltan/ClassGenerator/main/ClassGenerator.png)
 
